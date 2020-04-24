@@ -3,6 +3,7 @@ public class Main{
 
          try
          {
+             System.out.println("Se traducira el archivo texto.txt\n");
              Translator translator= new Translator();
              translator.PrepararDiccionario();
              String traduccionFinal= translator.Traducir();
