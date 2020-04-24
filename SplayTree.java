@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+//Referencia de codigo: https://www.sanfoundry.com/java-program-implement-splay-tree/
+
+
 public class SplayTree {
 
     SplayNode root;
@@ -55,6 +58,8 @@ public class SplayTree {
             count++;
 
         }
+
+
         private void Splay(SplayNode x)
 
         {
@@ -254,10 +259,12 @@ ArrayList<SplayNode> splayList = new ArrayList<>();
          }
 
     }
+
+
 //codigo basado en https://www.sanfoundry.com/java-program-implement-splay-tree/
 
 
-    String search(String word)
+    public String search(String word)
     {
         inorder();
         for(int i=0;i<splayList.size();i++)
@@ -269,7 +276,7 @@ ArrayList<SplayNode> splayList = new ArrayList<>();
                 return splayList.get(i).spanish;
             }
         }
-        return "not found";
+        return "*"+word+"*";
     }
 
       
