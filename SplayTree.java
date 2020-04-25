@@ -271,8 +271,8 @@ ArrayList<SplayNode> splayList = new ArrayList<>();
         {
             if(splayList.get(i).english.equals(word))
             {
-                System.out.println();
-                System.out.println(splayList.get(i).spanish);
+               // System.out.println();
+              //  System.out.println(splayList.get(i).spanish);
                 return splayList.get(i).spanish;
             }
         }

@@ -1,4 +1,4 @@
-class SplayTree_calls
+class SplayTree_calls<K,V> implements Map<K,V>
 {
     SplayTree tree;
     
@@ -7,15 +7,16 @@ class SplayTree_calls
        tree = new SplayTree();
     }
 
-    public void put(String english, String spanish)
+    public void put(K english, V spanish)
     {
-        SplayNode node=new SplayNode(english,spanish);
+        SplayNode node=new SplayNode(english.toString(),spanish.toString());
         tree.insert(node);
     }
 
-    public String get(String english)
+    public String get(K english)
     {
-        return tree.search(english);
+        return tree.search(english.toString());
     }
+
 
 }
